@@ -41,10 +41,12 @@ Thus, the final fitness is calculated as `learning_index - cost_to_health`.
 A general formula for a given chromosome has been given below.
 
 ![untitled diagram](https://user-images.githubusercontent.com/25258877/44309932-d02c3400-a3eb-11e8-9a2a-8033859bed49.png)
-
-f   : fitness calculated.
-cr  : chromosome array, cr[i] defines the i'th allelle of the chromosome.
-other keywords are self explanatory.
+<br>
+<br>
+<br>
+f   : fitness calculated. <br>
+cr  : chromosome array, cr[i] defines the i'th allelle of the chromosome <br>
+Other terms are self explanatory.<br>
 Please refer [ActualData.csv](https://github.com/shikhar-scs/geneticAlgorithms/blob/master/ActualData.csv) for the actual data. 
 
 
