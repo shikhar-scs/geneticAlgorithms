@@ -14,11 +14,11 @@ Eligibility is defined as no of set bits > 10 (attendance atleast 50%)
 Now these, are mixed & matched on a random basis & a track of their parents is kept. In every generation, the best 50% are chosen (on the basis of the fitness function). There parents are also chosen & now, a new generation set is generated.
 A track of the best chromosome in every generation is kept, & also all participating chromosomes are stored in the population. 
 
-As we can observe, the value `li-hc`, which is also the fitness of a chromosome, improves over time. Multiple instances of the program can be run to verify the same.
-Starting from 1.51 -> 2.66 , a significant improvement. 
 
 ## Best chromosome in i'th population 
-the first population has been excluded
+
+As we can observe, the value `li-hc`, which is also the fitness of a chromosome, improves over time. Multiple instances of the program can be run to verify the same.
+Starting from 1.51 -> 2.66 , a significant improvement. 
 
 <img width="980" alt="best" src="https://user-images.githubusercontent.com/25258877/44310722-8e55ba80-a3f8-11e8-927b-ec4c4f5ccde4.png">
 
