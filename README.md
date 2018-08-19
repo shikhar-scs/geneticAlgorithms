@@ -9,7 +9,7 @@ python randomGuy.py
 
 ## Sample/Demo
  
-Visit [Analysis,MD](https://github.com/shikhar-scs/geneticAlgorithms/blob/master/analysis.md) to see an analysis of the data.
+Visit [analysis.md](https://github.com/shikhar-scs/geneticAlgorithms/blob/master/analysis.md) to see an analysis of the data.
 
 ## Note 
 
