@@ -30,4 +30,6 @@ The motive now is to maximise the learning index & minimise the cost to health.
 Thus, the final fitness is calculated as `learning_index - cost_to_health`. 
 A general formula for a given chromosome has been given below.
 
-Fitness (f) = 
+![untitled diagram](https://user-images.githubusercontent.com/25258877/44309932-d02c3400-a3eb-11e8-9a2a-8033859bed49.png)
+
+
