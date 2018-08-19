@@ -1,3 +1,13 @@
+## Running the file
+
+```
+python randomGuy.py
+```
+
+## Sample/Demo
+ 
+Visit ActualData.csv](https://github.com/shikhar-scs/geneticAlgorithms/blob/master/ActualData.csv) to see an analysis of the data.
+
 ## Note 
 
 Below are several factors on which the number of classes I attend depends. The data present in [ActualData.csv](https://github.com/shikhar-scs/geneticAlgorithms/blob/master/ActualData.csv) is not random, rather, is based upon several factors I've listed underneath. The calculations have been made accordingly.
@@ -31,5 +41,13 @@ Thus, the final fitness is calculated as `learning_index - cost_to_health`.
 A general formula for a given chromosome has been given below.
 
 ![untitled diagram](https://user-images.githubusercontent.com/25258877/44309932-d02c3400-a3eb-11e8-9a2a-8033859bed49.png)
+
+f   : fitness calculated.
+cr  : chromosome array, cr[i] defines the i'th allelle of the chromosome.
+other keywords are self explanatory.
+Please refer [ActualData.csv](https://github.com/shikhar-scs/geneticAlgorithms/blob/master/ActualData.csv) for the actual data. 
+
+
+
 
 
