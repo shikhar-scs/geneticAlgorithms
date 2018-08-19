@@ -7,7 +7,7 @@ learning_index = [0.33,	0.3, 0.15, 0.13, 0.19, 0.36, 0.49, 0.62, 0.56, 0.17,
 health_cost = [0.10, 0.11, 0.29, 0.32, 0.19, 0.14, 0.17, 0.29, 0.53, 0.10,
                0.29, 0.21, 0.31, 0.28, 0.46, 0.32, 0.20, 0.21, 0.41, 0.33]
 
-complete_pop = [['chromosome', 'no_of_set_bits', 'learning_index', 'health_cost', 'li-hc', 'set_bits']]
+complete_pop = [['chromosome', 'no_of_set_bits', 'learning_index', 'health_cost', 'li-hc', 'set_bits', 'parents']]
 index = 0
 best_in_i_generation = []
 
