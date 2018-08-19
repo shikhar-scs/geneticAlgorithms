@@ -1,5 +1,8 @@
 # geneticAlgorithms
-Implementing Genetic Algorithms
+
+## Problem Statement 
+ 
+There are 20 classes in a semester. Being a college student, I want to maximise my learning index but also not comprise much with my health. Moreover, the no. of classes I attend should be manageable enough to cross the cutoff bar. Above that it doesnt matter. Implement this as a GA problem.
 
 ## Running the file
 
