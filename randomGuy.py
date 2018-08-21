@@ -2,7 +2,7 @@ import random
 import csv
 import operator
 
-learning_index = [0.33,	0.3, 0.15, 0.13, 0.19, 0.36, 0.49, 0.62, 0.56, 0.17,
+learning_index = [0.33, 0.3, 0.15, 0.13, 0.19, 0.36, 0.49, 0.62, 0.56, 0.17,
                   0.13, 0.26, 0.35, 0.44, 0.13, 0.12, 0.42, 0.44, 0.73, 0.75]
 health_cost = [0.10, 0.11, 0.29, 0.32, 0.19, 0.14, 0.17, 0.29, 0.53, 0.10,
                0.29, 0.21, 0.31, 0.28, 0.46, 0.32, 0.20, 0.21, 0.41, 0.33]
@@ -111,8 +111,17 @@ for i in range(0, 20):
 
         complete_pop.append([a, a.count('1'), str(l_i)[0:4], str(h_c)[0:4], str(l_i - h_c)[0:4], set_bits, 'F'])
 
-# those having no. of set bits > 10 (minimum 50% attendance)
-last_child_gen = master_function(master_function(master_function(master_function(master_function(sorted(complete_pop[1:len(complete_pop)], key=operator.itemgetter(1), reverse=True))))))
+last_child_gen = master_function(
+                    master_function(
+                        master_function(
+                            master_function(
+                                master_function(sorted(complete_pop[1:len(complete_pop)], key=operator.itemgetter(1), reverse=True
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
 
 best_in_last_generation = best_in_i_generation[len(best_in_i_generation)-1]
 print(best_in_last_generation)
@@ -126,4 +135,3 @@ with open('complete_population.csv', 'w') as writeFile:
 with open('best_in_i_gen.csv', 'w') as writeFile:
     writer = csv.writer(writeFile)
     writer.writerows(best_in_i_generation)
-
