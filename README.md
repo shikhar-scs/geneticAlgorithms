@@ -1,8 +1,8 @@
-# geneticAlgorithms
+# Implementing Genetic Algorithms
 
 ## Problem Statement 
  
-There are 20 classes in a semester. Being a college student, I want to maximise my learning index but also not comprise much with my health. Moreover, the no. of classes I attend should be manageable enough to cross the cutoff bar. Above that it doesnt matter. Implement this as a GA problem.
+There are 20 classes in a semester. Being a college student, I want to maximise my learning index but also not comprise much with my health. Moreover, the no. of classes I attend should be manageable enough to cross the cutoff bar. Above that it doesnt matter. 
 
 ## Running the file
 
@@ -54,3 +54,9 @@ f   : fitness calculated. <br>
 cr  : chromosome array, cr[i] defines the i'th allelle of the chromosome <br>
 Other terms are self explanatory.<br>
 Please refer [ActualData.csv](https://github.com/shikhar-scs/geneticAlgorithms/blob/master/ActualData.csv) for the actual data. 
+
+## The best results 
+
+Running the Algo multiple times, I arrived at some of the best chromosomes, the ones with the highest `li-hc` values. 
+
+<img width="979" alt="screen shot 2018-08-21 at 9 33 38 pm" src="https://user-images.githubusercontent.com/25258877/44414089-9180b000-a58a-11e8-9acc-f0b8fb636ee5.png">
