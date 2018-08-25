@@ -48,3 +48,4 @@ python randomGuy.py # generate a new population set
 python plottingAGraph.py # run Graph Plotter
 
 ```
+![graphplot](https://user-images.githubusercontent.com/25258877/44615597-82845100-a85b-11e8-9268-6fa60de3204a.png)
