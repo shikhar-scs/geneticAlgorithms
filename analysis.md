@@ -36,3 +36,15 @@ The complete population set can be found [here](https://gist.github.com/shikhar-
 ## Inference
 
 Running the algo for a higher no of generations will give a better result, unless we hit a bottle-neck. The process can be stopped now.
+
+## Graph of Complete Population
+
+To get a graph of the complete population, run
+
+```coffeescript
+
+python randomGuy.py # generate a new population set
+
+python plottingAGraph.py # run Graph Plotter
+
+```
