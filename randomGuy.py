@@ -8,6 +8,7 @@ health_cost = [0.10, 0.11, 0.29, 0.32, 0.19, 0.14, 0.17, 0.29, 0.53, 0.10,
                0.29, 0.21, 0.31, 0.28, 0.46, 0.32, 0.20, 0.21, 0.41, 0.33]
 
 complete_pop = [['chromosome', 'no_of_set_bits', 'learning_index', 'health_cost', 'li-hc', 'set_bits', 'parents']]
+to_trace = [['index', 'health']]
 index = 0
 best_in_i_generation = []
 
@@ -72,6 +73,7 @@ def master_function(first_gen):
         next_gen.append(new_guy)
         complete_pop.append(new_guy)
 
+
     next_gen = sorted(next_gen, key=operator.itemgetter(4), reverse=True)
     best_in_i_generation.append(next_gen[0])
     good_parents = []
@@ -111,17 +113,18 @@ for i in range(0, 20):
 
         complete_pop.append([a, a.count('1'), str(l_i)[0:4], str(h_c)[0:4], str(l_i - h_c)[0:4], set_bits, 'F'])
 
-last_child_gen = master_function(
-                    master_function(
-                        master_function(
-                            master_function(
-                                master_function(sorted(complete_pop[1:len(complete_pop)], key=operator.itemgetter(1), reverse=True
+last_child_gen = \
+    master_function(
+        master_function(
+            master_function(
+                master_function(
+                    master_function(sorted(complete_pop[1:len(complete_pop)], key=operator.itemgetter(1), reverse=True)
                                     )
                                 )
                             )
                         )
                     )
-                )
+
 
 best_in_last_generation = best_in_i_generation[len(best_in_i_generation)-1]
 print(best_in_last_generation)
@@ -135,3 +138,10 @@ with open('complete_population.csv', 'w') as writeFile:
 with open('best_in_i_gen.csv', 'w') as writeFile:
     writer = csv.writer(writeFile)
     writer.writerows(best_in_i_generation)
+
+with open('graph_file.csv', 'w') as writeFile:
+    writer = csv.writer(writeFile)
+    writer.writerows(to_trace)
+
+# Best in all population sets received yet.
+# 11001111110111001111,15,6.41,3.58,2.83,"[1, 2, 5, 6, 7, 8, 9, 10, 12, 13, 14, 17, 18, 19, 20]",84 85
