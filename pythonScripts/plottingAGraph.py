@@ -5,7 +5,7 @@ import plotly.figure_factory as FF
 import numpy as np
 import pandas as pd
 
-df = pd.read_csv('graph_file.csv')
+df = pd.read_csv('csvFiles/graph_file.csv')
 
 trace1 = go.Scatter( x=df['index'], y=df['health'], mode='lines+markers', showlegend=True)
 layout = go.Layout(title='Tracking all populations', plot_bgcolor='rgb(230, 230,230)')

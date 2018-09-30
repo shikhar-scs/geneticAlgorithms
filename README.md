@@ -16,7 +16,7 @@ Visit [analysis.md](https://github.com/shikhar-scs/geneticAlgorithms/blob/master
 
 ## Note 
 
-Below are several factors on which the number of classes I attend depends. The data present in [ActualData.csv](https://github.com/shikhar-scs/geneticAlgorithms/blob/master/ActualData.csv) is not random, rather, is based upon several factors I've listed underneath. The calculations have been made accordingly.
+Below are several factors on which the number of classes I attend depends. The data present in [ActualData.csvFiles/csv](https://github.com/shikhar-scs/geneticAlgorithms/blob/master/csvFiles/ActualData.csv) is not random, rather, is based upon several factors I've listed underneath. The calculations have been made accordingly.
 
 ### Supposing I have 4 classes in a week & 5 weeks in a semester & time table is week-based.
 

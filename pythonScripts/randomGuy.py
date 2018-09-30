@@ -12,7 +12,7 @@ to_trace = [['index', 'health']]
 index = 0
 best_in_i_generation = []
 
-with open('next_gen.csv', 'w') as writeFile:
+with open('csvFiles/next_gen.csv', 'w') as writeFile:
     writer = csv.writer(writeFile)
     writer.writerows([])
 
@@ -26,11 +26,11 @@ def cross_and_mute(p1, p2):
         else:
             new_child += str(p2[i])
 
-    mut_index = round(random.random()*900) % 20
-    if new_child[mut_index] == '1':
-        new_child = new_child[0:mut_index] + '0' + new_child[mut_index+1:20]
-    else:
-        new_child = new_child[0:mut_index] + '1' + new_child[mut_index+1:20]
+    # mut_index = round(random.random()*900) % 20
+    # if new_child[mut_index] == '1':
+    #     new_child = new_child[0:mut_index] + '0' + new_child[mut_index+1:20]
+    # else:
+    #     new_child = new_child[0:mut_index] + '1' + new_child[mut_index+1:20]
 
     l_i = 0
     h_c = 0
@@ -90,7 +90,7 @@ def master_function(first_gen):
     for i in range(0, len(good_parents)):
         new_next_gen.append(first_gen[good_parents[i]])
 
-    with open('next_gen.csv', 'a') as writeFile:
+    with open('csvFiles/next_gen.csv', 'a') as writeFile:
         writer = csv.writer(writeFile)
         writer.writerows(next_gen)
 
@@ -98,7 +98,7 @@ def master_function(first_gen):
 
 
 # the first population
-for i in range(0, 20):
+for i in range(0, 20000):
     a = str(bin(int(round(100000054432077770*random.random())))).split('0b')[1]
     if len(a) > 24:
         l_i = 0
@@ -131,15 +131,18 @@ print(best_in_last_generation)
 best_overall = sorted(last_child_gen, key=operator.itemgetter(4), reverse=True)[0]
 print(best_overall)
 
-with open('complete_population.csv', 'w') as writeFile:
+for i in range(0, len(complete_pop)):
+    to_trace.append([i, complete_pop[i][4]])
+
+with open('csvFiles/complete_population.csv', 'w') as writeFile:
     writer = csv.writer(writeFile)
     writer.writerows(complete_pop)
 
-with open('best_in_i_gen.csv', 'w') as writeFile:
+with open('csvFiles/best_in_i_gen.csv', 'w') as writeFile:
     writer = csv.writer(writeFile)
     writer.writerows(best_in_i_generation)
 
-with open('graph_file.csv', 'w') as writeFile:
+with open('csvFiles/graph_file.csv', 'w') as writeFile:
     writer = csv.writer(writeFile)
     writer.writerows(to_trace)
 
